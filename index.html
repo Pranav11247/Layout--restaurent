@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Panav Solanki">
+    <meta name="discription" content="These is our Little Taco shop,we serve Delicious Taco ,Come and Eat.">
+    <title>The Little Taco Shop</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 600px;
+        }
+
+        h1,
+        h2,
+        p,
+        summary,
+        table {
+            margin-left: 20px;
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            margin-left: 20px;
+
+        }
+
+        form textarea {
+            width: 256px;
+            height: 137px;
+        }
+
+        table {
+            border-spacing: 1px;
+        }
+
+        table td,
+        th {
+            padding: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+
+        footer {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome To The Little Taco Shop </h1>
+        <header>
+            <nav>
+                <ul>
+                    <a href="http://">
+                        <li>About LTS</li>
+                    </a>
+                    <a href="http://">
+                        <li>Our Menu</li>
+                    </a>
+                    <a href="http://">
+                        <li>Store Hours</li>
+                    </a>
+                    <a href="http://">
+                        <li>Contact Us</li>
+                    </a>
+                </ul>
+            </nav>
+            <figure>
+                <img width="300px" src="https://c0.wallpaperflare.com/preview/466/997/258/drink-fruit-glass-bar.jpg"
+                    alt="Juices">
+                <p>Tacos and a Drink</p>
+            </figure>
+            <hr>
+        </header>
+        <main>
+            <H2>About LTS</H2>
+            <p>
+                LTS was founded in 2022Our shop was built from a love of tacos .We hope our shop adds a unique and
+                intresting place to our little town.
+            </p>
+            <h2>Taco Trivia</h2>
+            <aside>
+                <details>
+                    <summary>When did Tacos first appear in United States?</summary>
+                    <p>
+                        tory of tacos is debated, with some suggesting pre-Columbian origins and others linking the word
+                        to a Spanish term for a plug, while the first documented taco feast for Europeans was arranged
+                        by Hernán Cortés for his captains in Coyoacán.
+                        <time datetime="1905">1905</time>
+                        (source:
+                        <cite>
+                            <a href="https://www.smithsonianmag.com/">Smithsonian Magazine</a>
+                        </cite>
+                        )
+                    </p>
+                </details>
+            </aside>
+            <hr>
+            <h2>Our Contact Form</h2>
+            <form action="post" method="get">
+                <fieldset>
+                    <legend>Send Us a Message</legend>
+                    <p> <label for="username">Name:</label>
+                        <input required type="text" id="username" style="width: 200px;" placeholder="your name">
+                    </p>
+                    <p>
+                        <label for="emailid">Email:</label>
+                        <input required type="email" id="emailid" style="width: 200px;" placeholder="your email">
+                    </p>
+                    <p>
+                        <label for="message">Your message</label>
+                        <br>
+                        <textarea name="message" cols="8" rows="8" id="message"></textarea>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </p>
+            </form>
+            <hr>
+            <article id="menu">
+                <h2>Our Menu</h2>
+                <table>
+                    <caption>Our Tacos</caption>
+                    <thead>
+                        <tr>
+                            <th>Tacos</th>
+                            <th scope="col"><abbr title="quantity">Qty</abbr></th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="3">Crunchy</th>
+                            <td>1</td>
+                            <td>$5</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>$9</td>
+                        </tr>
+                        <tr>
+
+                            <td>3</td>
+                            <td>$12</td>
+                        </tr>
+
+                        <tr>
+                            <th rowspan="3">Soft</th>
+                            <td>1</td>
+                            <td>$7</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>$11</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>$14</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </article>
+        </main>
+        <hr>
+        <h2>Our Location</h2>
+        <p>555 Taco Temptation lane,Suit T kanso city,MO:55555-5555</p>
+        <p>Phone NO:9999-9999</p>
+        <hr>
+        <footer>
+
+            <p>Copy Rights ©, Reserved Taco Shop</p>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
